@@ -22,6 +22,7 @@ public class EmailGeneratorService {
     public EmailGeneratorService(WebClient.Builder webClientBuilder) {
         this.webClient = webClientBuilder.build();
     }
+
     public String generateEmailReply(EmailRequest emailRequest) {
         //Build the prompt
         String prompt = buildPrompt(emailRequest);
