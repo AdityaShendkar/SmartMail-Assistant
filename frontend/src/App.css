@@ -1,1 +1,121 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f4f7fc, #dbeafe);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiContainer-root {
+  background: #ffffff;
+  padding: 35px !important;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.MuiTypography-h4 {
+  font-weight: 700 !important;
+  color: #1976d2;
+  margin-bottom: 25px !important;
+}
+
+.MuiTextField-root {
+  background: #fff;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 12px !important;
+}
+
+.MuiInputLabel-root {
+  font-weight: 500;
+}
+
+.MuiButton-contained {
+  padding: 12px 20px !important;
+  border-radius: 10px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  transition: all 0.3s ease;
+}
+
+.MuiButton-contained:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(25, 118, 210, 0.3);
+}
+
+.MuiButton-outlined {
+  border-radius: 10px !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+}
+
+.MuiButton-outlined:hover {
+  background-color: #1976d2 !important;
+  color: white !important;
+}
+
+.MuiFormControl-root {
+  margin-top: 10px;
+}
+
+.generated-reply {
+  margin-top: 30px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1976d2;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .MuiContainer-root {
+    margin: 15px;
+    padding: 20px !important;
+  }
+
+  .MuiTypography-h4 {
+    font-size: 1.8rem !important;
+  }
+}
